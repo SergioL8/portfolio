@@ -32,6 +32,7 @@ export const skills = {
 export const projects = [
   {
     title: "Korazon App",
+    slug: "korazon",
     subtitle: null,
     category: "Startup / Full-Stack Mobile App",
     description:
@@ -46,6 +47,7 @@ export const projects = [
   },
   {
     title: "DADIP",
+    slug: "dadip",
     subtitle: "Data Aggregation & Directional Interpolation Pipeline",
     category: "Research / Satellite Data Analysis",
     description:
@@ -62,6 +64,7 @@ export const projects = [
   },
   {
     title: "TiagoRobot",
+    slug: "tiago",
     subtitle: "Webots Simulation Program",
     category: "Robotics / AI / Path Planning",
     description:

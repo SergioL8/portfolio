@@ -1,13 +1,20 @@
+import { Link } from "react-router-dom";
+
 export default function ProjectCard({ project }) {
   return (
-    <div className="bg-slate-800 border border-slate-700 rounded-2xl p-6 flex flex-col h-full hover:border-sky-400/50 transition-colors">
+    <Link
+      to={`/project/${project.slug}`}
+      className="bg-slate-800 border border-slate-700 rounded-2xl p-6 flex flex-col h-full hover:border-sky-400/50 transition-colors cursor-pointer group"
+    >
       {/* Category tag */}
       <span className="text-xs font-semibold uppercase tracking-wider text-sky-400 mb-3">
         {project.category}
       </span>
 
       {/* Title */}
-      <h3 className="text-xl font-bold text-white mb-1">{project.title}</h3>
+      <h3 className="text-xl font-bold text-white mb-1 group-hover:text-sky-400 transition-colors">
+        {project.title}
+      </h3>
       {project.subtitle && (
         <p className="text-sm text-slate-400 mb-3">{project.subtitle}</p>
       )}
@@ -36,6 +43,24 @@ export default function ProjectCard({ project }) {
           </span>
         ))}
       </div>
-    </div>
+
+      {/* View more hint */}
+      <div className="mt-4 flex items-center gap-1 text-sky-400 text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+        View project details
+        <svg
+          className="w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </div>
+    </Link>
   );
 }

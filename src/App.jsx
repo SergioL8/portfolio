@@ -1,17 +1,38 @@
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Experience from "./components/Experience";
-import Footer from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import Home from "./components/Home";
+import KorazonPage from "./pages/KorazonPage";
+import DadipPage from "./pages/DadipPage";
+import TiagoPage from "./pages/TiagoPage";
+
+function ScrollToTop() {
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const el = document.querySelector(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+        return;
+      }
+    }
+    window.scrollTo(0, 0);
+  }, [pathname, hash]);
+
+  return null;
+}
 
 export default function App() {
   return (
-    <div className="bg-slate-950 min-h-screen">
-      <Hero />
-      <About />
-      <Projects />
-      <Experience />
-      <Footer />
-    </div>
+    <BrowserRouter basename="/portfolio">
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/project/korazon" element={<KorazonPage />} />
+        <Route path="/project/dadip" element={<DadipPage />} />
+        <Route path="/project/tiago" element={<TiagoPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

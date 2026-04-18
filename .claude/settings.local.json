@@ -7,7 +7,20 @@
       "mcp__Claude_Preview__preview_start",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(gh repo:*)",
+      "Bash(brew install:*)",
+      "Bash(gh auth:*)",
+      "Bash(cp /Users/sergio/Desktop/20260407/elevation.jpeg /Users/sergio/portfolio/public/images/dadip/)",
+      "Bash(cp /Users/sergio/Desktop/20260407/elevation_before_interpolation.png /Users/sergio/portfolio/public/images/dadip/)",
+      "Bash(cp /Users/sergio/Desktop/20260407/elevationZoomedIn.jpeg /Users/sergio/portfolio/public/images/dadip/)",
+      "Bash(cp /Users/sergio/Desktop/20260407/roughness5000.jpeg /Users/sergio/portfolio/public/images/dadip/)",
+      "Bash(cp /Users/sergio/Desktop/20260407/elevation_standard_deviation.jpeg /Users/sergio/portfolio/public/images/dadip/)",
+      "Bash(cp /Users/sergio/Downloads/convolved_mapp.png /Users/sergio/portfolio/public/images/tiago/)",
+      "Bash(cp '/Users/sergio/Downloads/resultOfA*Simulation.png' /Users/sergio/portfolio/public/images/tiago/resultOfAStarSimulation.png)",
+      "Bash(cp '/Users/sergio/Downloads/simulationofA*algorithm.mp4' /Users/sergio/portfolio/public/images/tiago/simulationOfAStar.mp4)",
+      "Bash(cp /Users/sergio/Downloads/mappingAndNavigationSimulation.mp4 /Users/sergio/portfolio/public/images/tiago/)",
+      "Bash(cp /Users/sergio/Downloads/grabbingJarsAISimulation.mp4 /Users/sergio/portfolio/public/images/tiago/)"
     ]
   }
 }
