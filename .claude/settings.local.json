@@ -20,7 +20,8 @@
       "Bash(cp '/Users/sergio/Downloads/resultOfA*Simulation.png' /Users/sergio/portfolio/public/images/tiago/resultOfAStarSimulation.png)",
       "Bash(cp '/Users/sergio/Downloads/simulationofA*algorithm.mp4' /Users/sergio/portfolio/public/images/tiago/simulationOfAStar.mp4)",
       "Bash(cp /Users/sergio/Downloads/mappingAndNavigationSimulation.mp4 /Users/sergio/portfolio/public/images/tiago/)",
-      "Bash(cp /Users/sergio/Downloads/grabbingJarsAISimulation.mp4 /Users/sergio/portfolio/public/images/tiago/)"
+      "Bash(cp /Users/sergio/Downloads/grabbingJarsAISimulation.mp4 /Users/sergio/portfolio/public/images/tiago/)",
+      "Bash(git push *)"
     ]
   }
 }

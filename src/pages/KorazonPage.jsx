@@ -58,29 +58,15 @@ export default function KorazonPage() {
         </a>
       </section>
 
-      {/* Mobile screenshot placeholder */}
+      {/* Mobile screenshot */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-4">App Design</h2>
         <div className="flex justify-center">
-          <div className="bg-slate-800 border border-slate-700 rounded-2xl w-64 h-[500px] flex items-center justify-center">
-            <div className="text-center text-slate-500">
-              <svg
-                className="w-12 h-12 mx-auto mb-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={1.5}
-                  d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-                />
-              </svg>
-              <p className="text-sm">Mobile screenshot</p>
-              <p className="text-xs">Coming soon</p>
-            </div>
-          </div>
+          <img
+            src={`${BASE}images/korazon/mobile-app.png`}
+            alt="Korazon mobile app screenshot"
+            className="rounded-2xl border border-slate-700 w-64 shadow-lg"
+          />
         </div>
       </section>
 
